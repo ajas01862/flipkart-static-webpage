@@ -1,0 +1,123 @@
+.Navbar {
+    /* position: relative; */
+     /* margin-left: 150px; */
+     /* padding-left: 150px; */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: white;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+
+.input-computer {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 50rem;
+    border-radius: 12px;
+    background-color: #c5deff42;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: max-content;
+    background-color: transparent;
+    border: 1px solid transparent;
+    align-items: center;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.input-mobile {
+    visibility: hidden;
+    top: 50vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .Navbar {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        /* background-color: rgb(233, 0, 0); */ 
+        height: min-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        position: absolute;
+        right: 65%;
+        margin: 0px;
+        padding: 0px;
+        /* justify-content: start;
+        align-items: start; */
+        width: 200px;
+        height: 200px;
+    }
+
+    ul {
+        margin-left: 180px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input-computer {
+        /* position: relative; */
+        visibility: hidden;
+        top: 50vh;
+        width: 0px;
+    }
+
+    .input-mobile {
+        visibility: visible;
+        padding: 1rem;
+        width: 100%;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        /* margin-left: 0px; */
+    }
+
+    /* .btn {
+        size: 5px;
+        width: 10px;
+        height: 10px;
+    } */
+
+    button {
+        /* size: 10px; */
+        width: 10px;
+        font-size: 0;
+        /* width: 150px; */
+        height: 10px;
+        margin: 10px;
+        /* justify-content: center; */
+        /* background-position: center; */
+        /* background-size: 1px 1px; */
+    }
+
+    .btn-more {
+        visibility: hidden;
+    }
+
+    /* .btn-img {
+        width: 5px;
+        height: 5px;
+        size: 5px;
+    } */
+}
